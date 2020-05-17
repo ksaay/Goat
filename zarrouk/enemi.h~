@@ -1,0 +1,23 @@
+#ifndef ENEMI_H_INCLUDED 
+#define ENEMI_H_INCLUDED
+
+typedef struct
+{
+
+SDL_Surface *sprite;
+SDL_Rect posanimation,positionenemi ;
+int etat;
+}enemi;
+void init_enemi(enemi *e);
+void affiche_enemi(enemi *e,SDL_Surface *screen);
+int deplacement_enemi(enemi *e);
+void animate_enemi(enemi *e);
+void decouper_sprite(enemi *e);
+int charger_sprite(enemi *e);
+
+
+
+
+
+
+#endif 
